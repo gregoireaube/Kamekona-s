@@ -1,0 +1,255 @@
+html, body{
+	margin:0;
+	padding:0;
+    background-color: #f86f79;
+    
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+    background-color: #fbf10a;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin: 0 100px; 
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #f86f79;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+    margin: 0 40px; 
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    
+    text-align: center;
+    margin-top: 150px;
+  
+   
+}
+.banner {
+    background-image: url('../Foodtruck/Image/653158-voyage-plage-waikiki-honolulu-hawaii.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 300px; 
+    width: 100%; 
+    position: relative; 
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 2rem; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #f86f79;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    padding: 60px 20px; 
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+}
+
+.text {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.image {
+    flex: 1; 
+    text-align: center; 
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto; 
+}
+.reverse {
+    flex-direction: row-reverse; /
+}
+.language-switcher {
+    display: flex;
+    margin: 0px; 
+}
+
+.language-switcher button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.language-switcher img {
+    width: 30px; 
+    height: auto; 
+}
+code
+.horizontal-scroll-section {
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 20px 0; 
+    background-color: #f86f79; 
+}
+
+.scroll-container {
+    display: inline-block; 
+}
+
+.scroll-item {
+    display: inline-block; 
+    width: 300px; 
+    margin-right: 20px;
+    text-align: center; 
+    background-color: #fbf10a; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    font-family: "Bradley Hand", cursive ;
+}
+
+.scroll-item img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.scroll-item h3 {
+    margin: 10px 0; 
+}
+
+.scroll-item p {
+    margin: 10px 0; 
+    display: block; 
+    width: 100%; 
+    color: #333; 
+}
+.location-section {
+    background-color: #f86f79; 
+    padding: 40px 20px 50px; 
+    font-size: 25px;
+    font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+}
+
+.location-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.location-text {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.location-map {
+    flex: 1;
+}
+
+.location-map iframe {
+    width: 100%; 
+    height: 400px; 
+    border: 5px; 
+}
+.contact-section {
+    background-color: #f86f79; 
+    padding: 40px 20px; 
+    font-family: "Bradley Hand", cursive;
+}
+
+.contact-section h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.contact-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.contact-info {
+    flex: 1; 
+    padding-right: 20px;
+}
+
+.contact-form {
+    flex: 1; 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px; 
+    background-color: white; 
+    color: black;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d65a6a; 
+}
+.footer-credits {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}

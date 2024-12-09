@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Food truck</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#accueil">Présentations du FoodTruck</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li>
+                <a href="Index.html">
+                    <img src="../Foodtruck/Image/logo_kamekona's.png" alt="Logo" class="logo">
+                </a>
+            </li>
+            <li><a href="#nous-trouvez">Où nous trouvez?</a></li>
+            <li><a href="#contact">Nous contactez</a></li>
+           
+                <div class="language-switcher">
+                    <button id="fr-button" onclick="changeLanguage('fr')">
+                        <img src="../Foodtruck/Image/drapeauFrance.png" alt="Français" />
+                    </button>
+                    <button id="en-button" onclick="changeLanguage('en')">
+                        <img src="../Foodtruck/Image/DrapeauAnglais.png" alt="English" />
+                    </button>
+                </div>
+            
+        
+            <script>
+                const texts = {
+                    fr: {
+                        title: "À propos de nous",title2: "Notre spécialité" ,title3: "Notre mission",
+                        text : "Bienvenue chez Kamekona's, un food truck unique inspiré de la célèbre série Hawaii 5.0 ! Nous vous invitons à découvrir nos délicieux plats à base de crevettes, préparés avec soin pour ravir vos papilles.", text2: "Nous sommes fiers de vous proposer un menu entièrement dédié aux crevettes ! Qu’il s’agisse de [plat signature, ex. crevettes sautées à l’ail et au beurre, tacos de crevettes épicés, etc.]Chaque recette est pensée pour mettre en valeur ce produit d’exception", text3: "Faire voyager vos papilles au cœur de Hawaii, tout en restant dans nos magnifiques villes normandes Rejoignez-nous sur la route et laissez-vous tenter par nos spécialités pleines de saveurs !",
+
+                    },
+                    en: {
+                        title: "About Us",title2: "Our specialty" ,title3: "Our mission",
+                        text: "Welcome to Kamekona's, a unique food truck inspired by the famous series Hawaii 5.0! We invite you to discover our delicious shrimp dishes, carefully prepared to delight your taste buds.", text2: "We are proud to offer you a menu entirely dedicated to shrimp! Whether it is [signature dish, e.g. sautéed shrimp with garlic and butter, spicy shrimp tacos, etc.] Each recipe is designed to highlight this exceptional product.", text3: "Take your taste buds on a journey to the heart of Hawaii, while staying in our beautiful Normandy citie Join us on the road and let yourself be tempted by our flavorful specialties!", 
+
+                    }
+                }
+                   
+        
+                function changeLanguage(lang) {
+                    document.getElementById("about-title").innerText = texts[lang].title; 
+                    document.getElementById("about-text").innerText = texts[lang].text;
+                    document.getElementById("about-text2").innerText = texts[lang].text2;
+                    document.getElementById("about-title2").innerText = texts[lang].title2; 
+                    document.getElementById("about-title3").innerText = texts[lang].title3; 
+                    document.getElementById("about-text3").innerText = texts[lang].text3;
+                }
+            </script>
+        </ul>
+    </nav>
+
+    <header class="header">
+       
+        <div class="banner">
+            <h1 class="banner-text">Bienvenue sur mon site !</h1>
+        </div>
+    </header>
+    
+    
+
+    <section class="section" id="accueil">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h2 id="about-title">À propos de nous</h2>
+                    <p id="about-text">Bienvenue chez Kamekona's, un food truck unique inspiré de la célèbre série Hawaii 5.0 ! Nous vous invitons à découvrir nos délicieux plats à base de crevettes, préparés avec soin pour ravir vos papilles.</p> <!-- Ajout de l'ID ici -->
+                </div>
+                <div class="image">
+                    <img src="../Foodtruck/Image/100803_d1995b_wide-05de43c8f3d4c37ef0ecd55f096377213262f2ad.jpg" alt="Image Hawaii 5-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="content reverse">
+                <div class="image">
+                    <img src="../Foodtruck/Image/brochettes-de-crevettes-et-legumes-grilles.jpg" alt="Image de crevettes">
+                </div>
+                <div class="text">
+                    <h2 id="about-title2">Notre spécialité</h2>
+                    <p id="about-text2">Nous sommes fiers de vous proposer un menu entièrement dédié aux crevettes ! Qu’il s’agisse de [plat signature, ex. crevettes sautées à l’ail et au beurre, tacos de crevettes épicés, etc.]Chaque recette est pensée pour mettre en valeur ce produit d’exception.  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h2 id="about-title3">Notre mission</h2>
+                    <p id ="about-text3">Faire voyager vos papilles au cœur de Hawaii, tout en restant dans nos magnifiques villes normandes.  
+
+                        Rejoignez-nous sur la route et laissez-vous tenter par nos spécialités pleines de saveurs !  
+                        </p>
+                </div>
+                <div class="image">
+                    <img src="../Foodtruck/Image/kamekona-s-shrimp-truck.jpg" alt="Image FoodTruck">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="horizontal-scroll-section" id="menu">
+        <div class="scroll-container">
+            <div class="scroll-item">
+                <h3>Crevettes Jambalaya</h3>
+                <p>Le Jambalaya aux crevettes est un plat emblématique du sud des États-Unis, particulièrement apprécié en Louisiane. Ce mets riche et épicé mêle des crevettes juteuses à un riz parfumé, cuisiné avec des légumes, des épices cajuns, et parfois des morceaux de saucisse ou de poulet. Chaque bouchée offre une explosion de saveurs chaleureuses et réconfortantes, évoquant les traditions culinaires de la Nouvelle-Orléans.</p>
+                <img src="../Foodtruck/Image/jambalaya.jpg" alt="Jambalaya">
+                <h1>12€</h1>
+            </div>
+            <div class="scroll-item">
+            
+                <h3>Crevettes et Grits</h3>
+                <p>Le Crevettes et Grits est un plat typique du sud des États-Unis, conjuguant simplicité et raffinement. Les crevettes sont sautées avec des épices savoureuses et parfois relevées d'une touche d'ail ou de citron, avant d'être servies sur un lit de grits crémeux, une purée de maïs au goût doux et réconfortant. Ce mariage parfait de textures et de saveurs incarne l’âme chaleureuse de la cuisine du Sud.</p>
+                <img src="../Foodtruck/Image/crevette_gritsd.jfif" alt="crevette_gritsd">
+                <h1>10€</h1>
+                
+            </div>
+            <div class="scroll-item">
+                
+                <h3>Brochettes de Crevettes</h3>
+                <p>Les brochettes de crevettes sont un classique léger et savoureux, parfait pour les amateurs de fruits de mer. Les crevettes sont marinées avec des épices, des herbes fraîches ou une touche d'agrumes, puis grillées pour révéler leur goût délicat et légèrement fumé. Servies avec une sauce maison ou une garniture croquante, elles offrent une expérience gourmande et conviviale.</p>
+                <img src="../Foodtruck/Image/brochettes-de-crevettes-et-legumes-grilles.jpg" alt="brochettes-de-crevettes-et-legumes-grilles">
+                <h1>10€</h1>
+            </div>
+            <div class="scroll-item">
+                
+                <h3>Riz frit aux crevettes</h3>
+                <p>Le Shrimp Fried Rice est un plat délicieux et réconfortant, inspiré de la cuisine asiatique. Les crevettes sautées, juteuses et savoureuses, se mêlent à du riz sauté doré, accompagné de légumes croquants et relevé d’une touche de sauce soja. Simple et généreux, ce plat offre un équilibre parfait entre douceur et umami, idéal pour un repas rapide et savoureux..</p>
+                <img src="../Foodtruck/Image/shrimp-fried-rice-on-plate-thumbnail.jpg" alt="riz frit aux crevettes">
+                <h1>9€</h1>
+            </div>
+            <div class="scroll-item">
+                
+                <h3>Langoustines à l'ail</h3>
+                <p>Les Langoustines à l'ail sont un véritable régal pour les amateurs de crustacés. Tendres et délicates, les langoustines sont poêlées avec du beurre, de l'ail frais et une touche de persil, révélant des saveurs subtiles et gourmandes. Ce plat raffiné évoque la fraîcheur des côtes maritimes, idéal à déguster avec un morceau de pain pour savourer chaque goutte de la sauce parfumée.</p>
+                <img src="../Foodtruck/Image/Lemon-Garlic-Shrimp-Scampi-Square.jpg" alt="Langoustines à l'ail">
+                <h1>12€</h1>
+            </div>
+         
+        </div>
+    </section>
+    <section class="location-section" id="nous-trouvez">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <h2>Où nous trouver</h2>
+                    <p>Notre Food Truck est localisé sur les côtes Normandes. Nous sommes localisés à différents endroits selon les jours de la semaine.</p>
+                    <h1>Du lundi au Jeudi sur la place de l'hôtel de ville de Honfleur</h1>
+                    <p>Adresse : Place de l'hôtel de ville, 14600 Honfleur</p>
+                    <p>Téléphone : +33 06 10 81 20 45</p>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.3904041109354!2d0.23170117680329952!3d49.4204327609895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e033d338aa22f7%3A0x9124a97994f1506a!2sPlace%20de%20l&#39;H%C3%B4tel%20de%20Ville!5e0!3m2!1sfr!2sfr!4v1732740944445!5m2!1sfr!2sfr" 
+                        width="600" 
+                        height="450" style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <h1>Du Vendredi au Dimanche sur la place de la mairie de Ouistreham </h1>
+                    <p>Pl. Albert Lemarignier, 14150 Ouistreham</p>
+                    <p>Téléphone : +33 06 10 81 20 45</p>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9855871644518!2d-0.26105107351140305!3d49.276670321391975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a6402519ea5c1%3A0xcf3c4bab09c4427d!2sMairie%20de%20Ouistreham%20Riva-Bella!5e0!3m2!1sfr!2sfr!4v1732741693958!5m2!1sfr!2sfr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <p>Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    <p><strong>Téléphone :</strong> +33 06 10 81 20 45</p>
+                    <p><strong>Email :</strong> kamekona's@gmailcom</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contact-form">
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                        <input type="email" id="email" placeholder="Votre email" required>
+                        <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-credits">
+        <p>© 2024 Kamekona's. Tous droits réservés.</p>
+    </footer>
+    
+    
+
+
+
+
+
+
+
+   
+
+    
+
+
+    
+</body>
+</html>
